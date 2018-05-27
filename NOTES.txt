@@ -1,0 +1,3 @@
+
+In .angular-cli.json, you will put in your scripts. You would add your javascript into the script array, and your styles (such as bootstrap) into the styles array.
+
