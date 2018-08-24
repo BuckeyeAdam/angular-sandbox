@@ -1,3 +1,14 @@
 
 In .angular-cli.json, you will put in your scripts. You would add your javascript into the script array, and your styles (such as bootstrap) into the styles array.
+  -This file is just a configuration file
+
+The purpose of @NgModule is to declare everything you create. This is in app.module.ts.
+  -Any new component, service or module, etc. that we create we will reference it in app.module.ts
+
+-The declarations array holds all of the components we create
+-The imports array holds all of the modules
+-The providers array holds all of the services
+  -services will be for outside APIs or using data in other components
+
+
 
