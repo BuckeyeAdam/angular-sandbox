@@ -14,5 +14,17 @@ export class UserComponent {
   // Methods
   constructor() {
     console.log('Hello user...');
+    console.log(this.age);
+    this.hasBirthday();
+    console.log(this.age);
+    this.sayHello();
+  }
+
+  sayHello() {
+    console.log(`Hello ${this.firstName}`);
+  }
+
+  hasBirthday() {
+    this.age += 1;
   }
 }
