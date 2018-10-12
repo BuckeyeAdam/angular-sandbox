@@ -9,7 +9,7 @@ import { User } from '../../models/User';
 })
 export class UsersComponent implements OnInit {
   users: User[];
-  showExtended: boolean = false;
+  showExtended: boolean = true;
   loaded: boolean = false;
   enableAdd: boolean = true;
   currentClasses = {};
@@ -31,7 +31,9 @@ export class UsersComponent implements OnInit {
           state: 'OH'
         },
         image: 'http://lorempixel.com/600/600/people/3',
-        isActive: true
+        isActive: true,
+        balance: 100,
+        registered: new Date('01/02/2018 08:30:00')
       },
       {
         firstName: 'Kylo',
@@ -43,7 +45,9 @@ export class UsersComponent implements OnInit {
           state: 'CA'
         },
         image: 'http://lorempixel.com/600/600/people/2',
-        isActive: false
+        isActive: false,
+        balance: 200,
+        registered: new Date('07/15/2018 08:30:00')
       },
       {
         firstName: 'Ricky',
@@ -55,7 +59,9 @@ export class UsersComponent implements OnInit {
           state: 'FL'
         },
         image: 'http://lorempixel.com/600/600/people/1',
-        isActive: true
+        isActive: true,
+        balance: 400,
+        registered: new Date('06/03/2018 3:30:00')
       }
     ];
 
